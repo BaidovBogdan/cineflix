@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" fill="none"/>
+
+  <path d="M64 64L128 128L192 64H64Z" fill="#3B82F6" opacity="0.8"/>
+  <path d="M64 192L128 128L192 192H64Z" fill="#3B82F6" opacity="0.8"/>
+  <path d="M128 128L160 96H96L128 128Z" fill="#3B82F6"/>
+  <path d="M128 128L160 160H96L128 128Z" fill="#3B82F6"/>
+  <path d="M64 64L128 128L192 64M64 192L128 128L192 192" fill="none" stroke="#3B82F6" stroke-width="16"/>
+</svg>
