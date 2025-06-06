@@ -287,6 +287,7 @@ export default function MovieDetails() {
                   src={MOVIE.image}
                   alt={MOVIE.title}
                   fill
+                  priority
                   className="object-cover"
                 />
               </motion.div>

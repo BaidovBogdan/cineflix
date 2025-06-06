@@ -355,6 +355,7 @@ export default function Catalog() {
                             src={movie.image}
                             width={300}
                             height={450}
+                            priority
                             className="h-[300px] object-cover"
                           />
                         }
