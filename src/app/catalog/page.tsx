@@ -208,12 +208,12 @@ export default function Catalog() {
 
         <Layout className="min-h-screen !bg-transparent relative z-10">
           <Sider
-            breakpoint="lg"
+            breakpoint="xl"
             collapsedWidth="0"
             onBreakpoint={broken => setCollapsed(broken)}
             width={300}
             theme="dark"
-            className="bg-gray-900/20 backdrop-blur-md border-r border-white/20 z-50 3xl:!fixed 3xl:h-full md:!bg-white/10"
+            className="bg-gray-900/20 backdrop-blur-md border-r border-white/20 z-50 lg:!bg-white/10 !fixed !h-full lg:!static lg:!h-auto"
           >
             <motion.div
               initial={{ opacity: 0, x: -20 }}
