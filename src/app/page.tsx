@@ -270,8 +270,35 @@ export default function Home() {
                   icon: '/jotai.svg',
                 },
                 {
-                  title: 'Поставьте 5)',
-                  description: ' ',
+                  title: 'Спасибо за хорошее обучение, мои успешные проекты:',
+                  description: (
+                    <div className="flex flex-col gap-2">
+                      <a
+                        href="https://app.takeabot.co.za/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-300 hover:text-blue-200 underline transition-colors"
+                      >
+                        Take a Bot
+                      </a>
+                      <a
+                        href="https://www.aivatar.co.za/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-300 hover:text-blue-200 underline transition-colors"
+                      >
+                        Ai Avatar
+                      </a>
+                      <a
+                        href="https://doska.boxtrucs.doska.work/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-300 hover:text-blue-200 underline transition-colors"
+                      >
+                        Продажа фургонов
+                      </a>
+                    </div>
+                  ),
                   icon: '/smiley.svg',
                 },
               ].map((tech, index) => (
@@ -296,7 +323,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold mb-2 text-white">
                     {tech.title}
                   </h3>
-                  <p className="text-gray-200">{tech.description}</p>
+                  <div className="text-gray-200">{tech.description}</div>
                 </motion.div>
               ))}
             </div>

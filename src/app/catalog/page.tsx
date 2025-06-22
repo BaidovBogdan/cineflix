@@ -22,29 +22,17 @@ import { loadSlim } from 'tsparticles-slim';
 import { motion } from 'framer-motion';
 import { debounce } from 'lodash';
 import Image from 'next/image';
-
+import { Genre, GENRES, Movie } from '../types/type';
 const { Sider, Content } = Layout;
 
-const MOVIES = Array.from({ length: 20 }, (_, i) => ({
+const MOVIES: Movie[] = Array.from({ length: 20 }, (_, i) => ({
   id: i + 1,
   title: `Фильм ${i + 1}`,
   year: 2020 + Math.floor(Math.random() * 4),
   rating: (3 + Math.random() * 2).toFixed(1),
-  genre: ['Боевик', 'Драма', 'Комедия', 'Триллер'][
-    Math.floor(Math.random() * 4)
-  ],
+  genre: GENRES[Math.floor(Math.random() * GENRES.length)],
   image: `https://picsum.photos/300/450?random=${i}`,
 }));
-
-const GENRES = [
-  'Боевик',
-  'Драма',
-  'Комедия',
-  'Триллер',
-  'Ужасы',
-  'Фантастика',
-] as const;
-type Genre = (typeof GENRES)[number];
 
 export default function Catalog() {
   const router = useRouter();
